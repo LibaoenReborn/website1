@@ -6,11 +6,11 @@ const port = 5000
 
 // Static Files 
 app.use(express.static('public'))
-app.use('/css' , express.static(__dirname + 'public/css'))
+app.use('/css' , express.static(__dirname + 'public/assets/css'))
 
 // Set Templating Engine
 app.use(expressLayouts)
-app.set('layout' ,  './layouts/full-width')
+app.set('layout' ,  './layouts/main')
 app.set('view engine' , 'ejs')
 
 // Navigation
