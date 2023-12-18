@@ -1,0 +1,154 @@
+<div class="container-fluid py-4">
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="multisteps-form mb-5">
+        <!--progress bar-->
+        <div class="row">
+          <div class="col-12 col-lg-8 mx-auto my-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="multisteps-form__progress">
+                  <button class="multisteps-form__progress-btn js-active" type="button" title="Server RDC">
+                    <span>Server RDC</span>
+                  </button>
+                  <button class="multisteps-form__progress-btn" type="button" title="serverMangerRoot">Server Manager / Root</button>
+                  <button class="multisteps-form__progress-btn" type="button" title="serverSpec">Server Spec</button>
+                  <button class="multisteps-form__progress-btn" type="button" title="remark">Remark</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--form panels-->
+        <div class="row">
+          <div class="col-12 col-lg-8 m-auto">
+            <form class="multisteps-form__form mb-8">
+              <!--single form panel-->
+              <div class="card multisteps-form__panel p-3 border-radius-xl bg-white js-active" data-animation="FadeIn">
+                <h5 class="font-weight-bolder mb-0">Server RDC</h5>
+                <div class="multisteps-form__content">
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>Server Host</label>
+                      <input class="multisteps-form__input form-control" type="serverHost" placeholder="etg. Gigabit" />
+                    </div>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                      <label>IP Address</label>
+                      <input class="multisteps-form__input form-control" type="ipAddress" placeholder="eg. 168.168.168.168" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>RDC / SSH Port</label>
+                      <input class="multisteps-form__input form-control" type="port" placeholder="eg. 16888" />
+                    </div>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                      <label>Login</label>
+                      <input class="multisteps-form__input form-control" type="login" placeholder="eg. Reborn" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>Password</label>
+                      <input class="multisteps-form__input form-control" type="password" placeholder="eg. 888888" />
+                    </div>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">Next</button>
+                  </div>
+                </div>
+              </div>
+              <!--single form panel-->
+              <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
+                <h5 class="font-weight-bolder mb-0">Server Manager / Root</h5>
+                <div class="multisteps-form__content">
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>URL</label>
+                      <input class="multisteps-form__input form-control" type="URL" placeholder="eg. https://eg.net" />
+                    </div>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                      <label>Username</label>
+                      <input class="multisteps-form__input form-control" type="username" placeholder="eg. Reborn" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>Password</label>
+                      <input class="multisteps-form__input form-control" type="serverManagerpassword" placeholder="eg. 888888" />
+                    </div>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                      <label>Root Host Name</label>
+                      <input class="multisteps-form__input form-control" type="rootHostname" placeholder="eg. SafeSpace" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>Root Password</label>
+                      <input class="multisteps-form__input form-control" type="rootPassword" placeholder="eg. 888888" />
+                    </div>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn bg-gradient-light mb-0 js-btn-prev" type="button" title="Prev">Prev</button>
+                    <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">Next</button>
+                  </div>
+                </div>
+              </div>
+              <!--single form panel-->
+              <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
+                <h5 class="font-weight-bolder mb-0">Server Spec</h5>
+                <div class="multisteps-form__content">
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>Services</label>
+                      <input class="multisteps-form__input form-control" type="services" placeholder="eg. Windows" />
+                    </div>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                      <label>RAM</label>
+                      <input class="multisteps-form__input form-control" type="ram" placeholder="eg. 8GB RAM" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>OS</label>
+                      <input class="multisteps-form__input form-control" type="os" placeholder="eg. Windows Server 2018" />
+                    </div>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn bg-gradient-light mb-0 js-btn-prev" type="button" title="Prev">Prev</button>
+                    <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">Next</button>
+                  </div>
+                </div>
+              </div>
+              <!--single form panel-->
+              <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
+                <h5 class="font-weight-bolder mb-0">Remark</h5>
+                <div class="multisteps-form__content">
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>Remark</label>
+                      <input class="multisteps-form__input form-control" type="remark" placeholder="eg. PJ50" />
+                    </div>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                      <label>Cost</label>
+                      <input class="multisteps-form__input form-control" type="cost" placeholder="eg. RM168 / 168USD" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-12 col-sm-6">
+                      <label>Expiry Date</label>
+                      <input class="multisteps-form__input form-control" type="expiryDate" placeholder="eg. 2023/12/13" />
+                    </div>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn bg-gradient-light mb-0 js-btn-prev" type="button" title="Prev">Prev</button>
+                    <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Send">Send</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

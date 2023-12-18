@@ -22,5 +22,18 @@ app.get('/about', (req, res) => {
     res.render('about' , { title: 'About Page', layout: './layouts/sidebar' })
 })
 
+app.get('/edit-server-list', (req, res) => {
+    res.render('edit-server-list' , { title: 'About Page'})
+})
+
+app.get('/server-list', (req, res) => {
+    res.render('server-list' , { title: 'About Page'})
+})
+
+app.get('/index', (req, res) => {
+    res.render('index' , { title: 'About Page'})
+})
+
+
 // Listen on Port 5000
 app.listen(port , () => console.info(`App listening on port ${port}`))
